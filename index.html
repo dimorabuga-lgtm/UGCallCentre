@@ -19,7 +19,7 @@
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="manifest" href="manifest.json">
-  <link rel="preload" as="image" href="assets/images/operator-main.webp" type="image/webp" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/images/hero-operator-main.webp" type="image/webp" fetchpriority="high">
   <link rel="mask-icon" href="mask-icon.svg" color="#D8FF3F">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -67,12 +67,12 @@
           <img class="brand-logo brand-logo--light brand-logo--navbar" src="assets/svg/logo-light.svg" alt="Логотип UG Call Centre" width="296" height="64" decoding="async">
         </a>
         <nav class="main-nav" id="primary-navigation" aria-label="Основна навігація">
-          <a href="#services">Послуги</a>
-          <a href="#process">Як працюємо</a>
-          <a href="#cases">Кейси</a>
-          <a href="#careers">Робота в UG</a>
           <a href="#pricing">Тарифи</a>
+          <a href="#process">Як працюємо</a>
+          <a href="#services">Послуги</a>
+          <a href="#cases">Кейси</a>
           <a href="#results">Результати</a>
+          <a href="#careers">Робота в UG</a>
           <a href="#contact">Контакти</a>
         </nav>
         <a class="button button-dark nav-cta" href="#contact">Почати співпрацю <i data-lucide="arrow-up-right"></i></a>
@@ -117,24 +117,64 @@
             </dl>
           </div>
 
-          <div class="hero-saas__scene hero-sales" data-hero-reveal role="region" aria-label="Відділ продажів UG: шлях замовлення від заявки до доставки" data-hero-sales>
-            <div class="hero-media" aria-hidden="true"><img class="hero-saas__office" src="assets/images/office-parcels-background.webp" alt="" width="1706" height="922" loading="eager" decoding="async"></div>
-            <section class="sales-board order-conveyor" aria-labelledby="conveyor-title">
-              <header class="order-conveyor__header">
-                <div class="order-conveyor__brand"><img src="assets/svg/logo-mark.svg" alt="" aria-hidden="true" width="42" height="42"><div><h2 id="conveyor-title">Відділ продажів UG</h2><p><i aria-hidden="true"></i>18 операторів онлайн</p></div></div>
-                <div class="order-conveyor__kpis"><div class="order-conveyor__today"><small>Сьогодні в роботі</small><strong>1 248 <span>заявок</span></strong></div><div><small>Підтверджено</small><strong>82%</strong></div></div>
-              </header>
-              <div class="order-conveyor__process" aria-label="Шлях замовлення: нова заявка, дзвінок, підтвердження, допродаж і доставка">
-                <div class="order-conveyor__track" aria-hidden="true"><i></i></div><i class="order-conveyor__dot" aria-hidden="true"></i>
-                <article class="conveyor-stage conveyor-stage--lead"><header><b>01</b><span><i data-lucide="shopping-bag"></i>Нова заявка</span></header><div class="conveyor-stage__body"><strong>Андрій К.</strong><p>Пилосос Deerma DX700S</p><b>1 690 грн</b><footer><span>Сайт</span><em>Отримано</em></footer></div></article>
-                <article class="conveyor-stage conveyor-stage--call"><header><b>02</b><span><i data-lucide="headset"></i>Дзвінок</span></header><div class="conveyor-call"><img src="assets/images/operator-main.webp" alt="Оператор UG Андрій телефонує клієнту" width="1536" height="1024" loading="eager" fetchpriority="high" decoding="async"><div><strong>Андрій</strong><small>Оператор UG</small><p><i aria-hidden="true"></i>Телефонує клієнту</p><div class="conveyor-call__wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><time>00:18</time></div></div></div></article>
-                <article class="conveyor-stage conveyor-stage--confirmed"><header><b>03</b><span><i data-lucide="circle-check-big"></i>Підтверджено</span></header><div class="conveyor-stage__body"><strong>Замовлення підтверджено</strong><b>2 640 грн</b><p>Адресу підтверджено<br>Доставку погоджено</p></div></article>
-                <article class="conveyor-stage conveyor-stage--upsell"><header><b>04</b><span><i data-lucide="trending-up"></i>Допродаж</span></header><div class="conveyor-stage__body"><strong>+640 грн</strong><b>Допродаж</b><p>HEPA-фільтр</p><footer><span>Новий чек</span><em>3 280 грн</em></footer></div></article>
-                <article class="conveyor-stage conveyor-stage--delivery"><header><b>05</b><span><i data-lucide="truck"></i>Доставка</span></header><div class="conveyor-stage__body"><strong>Передано в доставку</strong><b>Нова Пошта</b><p>ТТН №590012...</p><footer><em>Відправлення створено</em></footer></div><i class="conveyor-stage__parcel" data-lucide="package" aria-hidden="true"></i></article>
+          <div class="hero-saas__scene hero-visual" data-hero-reveal>
+            <span class="hero-visual__glow" aria-hidden="true"></span>
+            <picture>
+              <source srcset="assets/images/hero-operator-main.webp" type="image/webp">
+              <img class="hero-visual__image" src="assets/images/hero-operator-main.png" alt="Оператор UG Call Centre під час обробки замовлень" width="1536" height="1024" loading="eager" fetchpriority="high" decoding="async">
+            </picture>
+            <section class="test-launch" id="test-launch" aria-labelledby="test-launch-title">
+              <div class="test-launch__panel">
+                <div class="test-launch__copy">
+                  <p class="test-launch__eyebrow"><span></span> Тестовий запуск</p>
+                  <h2 id="test-launch-title">Вже працюєте з call-центром?</h2>
+                  <p>Передайте нам частину заявок на тестовий період і порівняйте результат із вашим поточним call-центром.</p>
+                </div>
+                <div class="test-launch__comparison" aria-label="Показники для порівняння роботи call-центрів">
+                  <p>Ваш call-центр <span>VS</span> UG Call Centre</p>
+                  <ul>
+                    <li><i data-lucide="badge-check" aria-hidden="true"></i>Підтвердження</li>
+                    <li><i data-lucide="trending-up" aria-hidden="true"></i>Допродажі</li>
+                    <li><i data-lucide="shopping-bag" aria-hidden="true"></i>Середній чек</li>
+                    <li><i data-lucide="headphones" aria-hidden="true"></i>Якість обробки</li>
+                  </ul>
+                </div>
+                <p class="test-launch__accent">Спочатку порівняйте результат — потім приймайте рішення.</p>
+                <a class="test-launch__cta" href="#contact">Запустити тест <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
               </div>
-              <footer class="order-conveyor__footer"><div><strong>Від заявки до відправленого замовлення</strong><p>UG бере на себе дзвінок, підтвердження, допродаж і передачу в доставку.</p></div><span class="order-conveyor__live"><i aria-hidden="true"></i><b>LIVE</b>Замовлення обробляються зараз</span></footer>
             </section>
           </div>
+        </div>
+      </section>
+
+      <section class="pricing-benefits pricing-section section" id="pricing" aria-labelledby="pricing-title">
+        <div class="pricing-benefits__glow" aria-hidden="true"></div><div class="container">
+          <header class="pricing-section__header" data-pricing-reveal><p><span></span> Тарифи</p><h2 id="pricing-title">Обирайте формат співпраці під ваш обсяг заявок</h2><p>Чим більший обсяг заявок — тим вигідніша ціна для вашого бізнесу.</p></header>
+          <div class="pricing-grid" aria-label="Тарифи UG Call Centre">
+            <article class="pricing-card" data-pricing-card>
+              <header><span class="pricing-card__icon"><i data-lucide="package"></i></span><h3>Мінімум</h3><p>Для невеликих проєктів або тестового запуску</p></header>
+              <p class="pricing-meta"><i data-lucide="inbox"></i><span>Кількість заявок на день</span><strong>30–50</strong></p>
+              <ul><li>Персональний менеджер</li><li>Обробка заявок оператором</li><li>Підтвердження замовлень</li><li>Загальний скрипт продажів</li><li>Базові допродажі</li><li>Передача даних у CRM / таблицю</li><li>Контроль якості роботи</li></ul>
+              <div class="pricing-price"><div><strong>23</strong><span>грн</span><small>за підтверджене замовлення</small></div><div><strong>23%</strong><small>за допродаж</small></div></div>
+              <a href="#contact" data-plan-choice="Мінімум">Обрати тариф <i data-lucide="arrow-up-right"></i></a>
+            </article>
+            <article class="pricing-card pricing-card--featured" data-pricing-card>
+              <b class="pricing-card__badge"><i data-lucide="sparkles"></i>Найпопулярніший</b>
+              <header><span class="pricing-card__icon"><i data-lucide="chart-no-axes-combined"></i></span><h3>Стандарт</h3><p>Для стабільного товарного бізнесу</p></header>
+              <p class="pricing-meta"><i data-lucide="inbox"></i><span>Кількість заявок на день</span><strong>50–100</strong></p>
+              <ul><li>Персональний менеджер</li><li>Обробка заявок оператором</li><li>Підтвердження замовлень</li><li>Індивідуальний скрипт під ваш товар</li><li>Допродажі та крос-продажі</li><li>Передача даних у CRM</li><li>Контроль якості та аналітика</li></ul>
+              <div class="pricing-price"><div><strong>21</strong><span>грн</span><small>за підтверджене замовлення</small></div><div><strong>21%</strong><small>за допродаж</small></div></div>
+              <a href="#contact" data-plan-choice="Стандарт">Обрати тариф <i data-lucide="arrow-up-right"></i></a>
+            </article>
+            <article class="pricing-card" data-pricing-card>
+              <header><span class="pricing-card__icon"><i data-lucide="rocket"></i></span><h3>Преміум</h3><p>Для масштабування та великих обсягів</p></header>
+              <p class="pricing-meta"><i data-lucide="inbox"></i><span>Кількість заявок на день</span><strong>100+</strong></p>
+              <ul><li>Виділена команда операторів</li><li>Обробка заявок оператором</li><li>Підтвердження замовлень</li><li>Індивідуальні скрипти під ваші товари</li><li>Регулярне коригування скриптів</li><li>Максимальні допродажі та крос-продажі</li><li>Інтеграція з CRM</li><li>Контроль якості, аналітика та оптимізація</li></ul>
+              <div class="pricing-price"><div><strong>19</strong><span>грн</span><small>за підтверджене замовлення</small></div><div><strong>20%</strong><small>за допродаж</small></div></div>
+              <a href="#contact" data-plan-choice="Преміум">Обрати тариф <i data-lucide="arrow-up-right"></i></a>
+            </article>
+          </div>
+          <p class="pricing-section__note">Фінальні умови співпраці узгоджуються індивідуально залежно від ніші, обсягу заявок та моделі обробки.</p>
         </div>
       </section>
 
@@ -417,37 +457,6 @@
               <div class="review-mini-case"><h4>Результат у ніші</h4><dl><div><dt>Підтвердження</dt><dd><span>58%</span><i>→</i><strong>73%</strong></dd></div><div><dt>Допродажі</dt><dd><span>47%</span><i>→</i><strong>79%</strong></dd></div><div><dt>Середній чек</dt><dd><span>1 520 грн</span><i>→</i><strong>1 910 грн</strong></dd></div></dl></div>
             </article>
           </div>
-        </div>
-      </section>
-
-      <section class="pricing-benefits pricing-section section" id="pricing" aria-labelledby="pricing-title">
-        <div class="pricing-benefits__glow" aria-hidden="true"></div><div class="container">
-          <header class="pricing-section__header" data-pricing-reveal><p><span></span> Тарифи</p><h2 id="pricing-title">Обирайте формат співпраці під ваш обсяг заявок</h2><p>Чим більший обсяг заявок — тим вигідніша ціна для вашого бізнесу.</p></header>
-          <div class="pricing-grid" aria-label="Тарифи UG Call Centre">
-            <article class="pricing-card" data-pricing-card>
-              <header><span class="pricing-card__icon"><i data-lucide="package"></i></span><h3>Мінімум</h3><p>Для невеликих проєктів або тестового запуску</p></header>
-              <p class="pricing-meta"><i data-lucide="inbox"></i><span>Кількість заявок на день</span><strong>30–50</strong></p>
-              <ul><li>Персональний менеджер</li><li>Обробка заявок оператором</li><li>Підтвердження замовлень</li><li>Загальний скрипт продажів</li><li>Базові допродажі</li><li>Передача даних у CRM / таблицю</li><li>Контроль якості роботи</li></ul>
-              <div class="pricing-price"><div><strong>23</strong><span>грн</span><small>за підтверджене замовлення</small></div><div><strong>23%</strong><small>за допродаж</small></div></div>
-              <a href="#contact" data-plan-choice="Мінімум">Обрати тариф <i data-lucide="arrow-up-right"></i></a>
-            </article>
-            <article class="pricing-card pricing-card--featured" data-pricing-card>
-              <b class="pricing-card__badge"><i data-lucide="sparkles"></i>Найпопулярніший</b>
-              <header><span class="pricing-card__icon"><i data-lucide="chart-no-axes-combined"></i></span><h3>Стандарт</h3><p>Для стабільного товарного бізнесу</p></header>
-              <p class="pricing-meta"><i data-lucide="inbox"></i><span>Кількість заявок на день</span><strong>50–100</strong></p>
-              <ul><li>Персональний менеджер</li><li>Обробка заявок оператором</li><li>Підтвердження замовлень</li><li>Індивідуальний скрипт під ваш товар</li><li>Допродажі та крос-продажі</li><li>Передача даних у CRM</li><li>Контроль якості та аналітика</li></ul>
-              <div class="pricing-price"><div><strong>21</strong><span>грн</span><small>за підтверджене замовлення</small></div><div><strong>21%</strong><small>за допродаж</small></div></div>
-              <a href="#contact" data-plan-choice="Стандарт">Обрати тариф <i data-lucide="arrow-up-right"></i></a>
-            </article>
-            <article class="pricing-card" data-pricing-card>
-              <header><span class="pricing-card__icon"><i data-lucide="rocket"></i></span><h3>Преміум</h3><p>Для масштабування та великих обсягів</p></header>
-              <p class="pricing-meta"><i data-lucide="inbox"></i><span>Кількість заявок на день</span><strong>100+</strong></p>
-              <ul><li>Виділена команда операторів</li><li>Обробка заявок оператором</li><li>Підтвердження замовлень</li><li>Індивідуальні скрипти під ваші товари</li><li>Регулярне коригування скриптів</li><li>Максимальні допродажі та крос-продажі</li><li>Інтеграція з CRM</li><li>Контроль якості, аналітика та оптимізація</li></ul>
-              <div class="pricing-price"><div><strong>19</strong><span>грн</span><small>за підтверджене замовлення</small></div><div><strong>20%</strong><small>за допродаж</small></div></div>
-              <a href="#contact" data-plan-choice="Преміум">Обрати тариф <i data-lucide="arrow-up-right"></i></a>
-            </article>
-          </div>
-          <p class="pricing-section__note">Фінальні умови співпраці узгоджуються індивідуально залежно від ніші, обсягу заявок та моделі обробки.</p>
         </div>
       </section>
 
