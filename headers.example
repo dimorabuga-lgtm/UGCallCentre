@@ -1,0 +1,3 @@
+# Hosting-specific production header configurations are provided in `_headers`,
+# `netlify.toml`, `vercel.json`, `.htaccess` and `nginx.conf.example`.
+# Keep CSP sources in sync with any future consent-gated analytics providers.

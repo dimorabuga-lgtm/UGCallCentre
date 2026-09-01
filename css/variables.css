@@ -1,0 +1,159 @@
+:root {
+  /* Color primitives */
+  --color-white: #ffffff;
+  --color-black: #080b14;
+  --color-slate-950: #080b14;
+  --color-slate-900: #0d1120;
+  --color-slate-700: #151c2f;
+  --color-slate-500: #64748b;
+  --color-slate-300: #94a3b8;
+  --color-slate-200: #cbd5e1;
+  --color-slate-100: #e2e8f0;
+  --color-slate-50: #f8fafc;
+  --color-lime-400: #8b5cf6;
+  --color-lime-500: #a78bfa;
+  --color-coral-500: #ff735b;
+  --color-green-600: #8b5cf6;
+  --color-amber-600: #c89419;
+  --color-red-600: #d95757;
+  --color-blue-600: #38bdf8;
+
+  /* Premium violet / blue theme */
+  --bg-primary: #080b14;
+  --bg-secondary: #0d1120;
+  --surface: #111827;
+  --surface-active: #151c2f;
+  --accent: #6c4dff;
+  --accent-2: #8b5cf6;
+  --accent-soft: #a78bfa;
+  --accent-blue: #38bdf8;
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --border: rgba(139, 92, 246, .22);
+  --border-active: rgba(139, 92, 246, .55);
+  --glow: rgba(108, 77, 255, .18);
+  --glow-purple: rgba(108, 77, 255, .18);
+  --glow-blue: rgba(56, 189, 248, .12);
+
+  /* Semantic colors */
+  --color-page: var(--bg-primary);
+  --color-surface: var(--bg-secondary);
+  --color-surface-alt: var(--surface);
+  --color-surface-inverse: var(--bg-primary);
+  --color-ink: var(--text-primary);
+  --color-ink-muted: var(--text-secondary);
+  --color-ink-inverse: var(--text-primary);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-active);
+  --color-primary: var(--accent);
+  --color-primary-hover: var(--accent-2);
+  --color-accent: var(--accent-2);
+  --color-accent-hover: var(--accent-soft);
+  --color-coral: var(--color-coral-500);
+  --color-success: var(--color-green-600);
+  --color-warning: var(--color-amber-600);
+  --color-danger: var(--color-red-600);
+  --color-info: var(--color-blue-600);
+
+  /* Gradients */
+  --gradient-brand: linear-gradient(90deg, var(--accent-soft) 0%, var(--accent-2) 45%, var(--accent-blue) 100%);
+  --gradient-dark: linear-gradient(135deg, var(--color-slate-950) 0%, var(--color-slate-900) 100%);
+  --gradient-aurora: radial-gradient(circle at 20% 40%, rgba(108, 77, 255, .26), transparent 28%), radial-gradient(circle at 75% 20%, rgba(139, 92, 246, .2), transparent 28%), radial-gradient(circle at 75% 72%, rgba(56, 189, 248, .14), transparent 32%);
+  --gradient-surface: linear-gradient(180deg, var(--color-white) 0%, var(--color-slate-50) 100%);
+
+  /* Typography */
+  --font-sans: "Manrope", Arial, sans-serif;
+  --font-display: "Space Grotesk", Arial, sans-serif;
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: clamp(3.5rem, 7vw, 5.5rem);
+  --line-height-none: 1;
+  --line-height-tight: 1.1;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.65;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.08em;
+
+  /* Spacing */
+  --space-0: 0;
+  --space-px: 1px;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  /* Layout */
+  --container-xs: 32rem;
+  --container-sm: 40rem;
+  --container-md: 48rem;
+  --container-lg: 64rem;
+  --container-xl: 72.5rem;
+  --container-2xl: 90rem;
+  --container-padding: clamp(var(--space-4), 3vw, var(--space-6));
+  --header-height: 4.875rem;
+
+  /* Borders and elevation */
+  --border-width: var(--space-px);
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-full: 9999px;
+  --shadow-xs: 0 1px 2px rgba(23, 32, 39, 0.06);
+  --shadow-sm: 0 4px 12px rgba(23, 32, 39, 0.08);
+  --shadow-md: 0 12px 28px rgba(23, 32, 39, 0.11);
+  --shadow-lg: 0 24px 52px rgba(23, 32, 39, 0.14);
+  --shadow-xl: 0 36px 86px rgba(23, 32, 39, 0.2);
+  --shadow-focus: 0 0 0 3px rgba(139, 92, 246, .12);
+
+  /* Layering */
+  --z-base: 0;
+  --z-raised: 1;
+  --z-dropdown: 10;
+  --z-sticky: 20;
+  --z-overlay: 30;
+  --z-modal: 40;
+  --z-toast: 50;
+
+  /* Motion */
+  --duration-instant: 0ms;
+  --duration-fast: 150ms;
+  --duration-base: 250ms;
+  --duration-slow: 450ms;
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --ease-emphasized: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --transition-color: color var(--duration-base) var(--ease-standard), background-color var(--duration-base) var(--ease-standard), border-color var(--duration-base) var(--ease-standard);
+  --transition-transform: transform var(--duration-base) var(--ease-emphasized);
+  --transition-opacity: opacity var(--duration-base) var(--ease-standard);
+  --transition-base: color var(--duration-base) var(--ease-standard), background-color var(--duration-base) var(--ease-standard), border-color var(--duration-base) var(--ease-standard), box-shadow var(--duration-base) var(--ease-standard), transform var(--duration-base) var(--ease-emphasized);
+
+  /* Breakpoints: custom properties cannot be used inside media-query conditions. */
+  --breakpoint-sm: 40rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 64rem;
+  --breakpoint-xl: 80rem;
+  --breakpoint-2xl: 96rem;
+}

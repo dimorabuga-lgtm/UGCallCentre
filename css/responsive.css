@@ -1,0 +1,99 @@
+@media (max-width: 900px) { .main-nav,.nav-cta{display:none}.menu-toggle{display:block}.site-header.menu-open .main-nav{position:absolute;top:78px;left:0;right:0;display:flex;flex-direction:column;align-items:stretch;gap:0;padding:10px 24px 22px;background:var(--paper);border-bottom:1px solid var(--line)}.site-header.menu-open .main-nav a{padding:12px 0}.hero-grid,.process-layout,.results-layout,.contact-box{grid-template-columns:1fr;gap:45px}.hero{padding-top:55px}.hero-visual{max-width:620px;width:100%;margin:auto}.process-layout{gap:54px}.results-layout{gap:35px}.contact-box{padding:48px}.service-grid{gap:12px}.container{width:min(100% - 40px,1160px)} }
+@media (max-width: 620px) { .container{width:calc(100% - 32px)}.nav-wrap{min-height:68px}.site-header.menu-open .main-nav{top:68px}.hero{padding:45px 0 53px}h1{font-size:46px}.hero-text{font-size:15px}.hero-actions{align-items:flex-start;flex-direction:column;gap:20px}.trusted-row{margin-top:40px}.hero-visual{min-height:400px}.dashboard-preview{inset:35px 5px 21px 12px;padding:20px}.metric-main{margin:22px 0 15px}.metric-main strong{font-size:32px}.ring-chart{width:70px;height:70px}.signal-card{left:0}.success-card{right:0}.card-float{padding:9px}.section{padding:76px 0}.section-heading h2,.process-copy h2,.contact-box h2{font-size:36px}.service-grid{grid-template-columns:1fr}.service-card{min-height:267px}.process-layout{gap:43px}.timeline li{grid-template-columns:45px 1fr;gap:13px}.result-panel{padding:20px}.result-top{gap:15px}.result-top h3{font-size:23px}.contact{padding-top:0}.contact-box{padding:34px 23px;gap:30px}.footer-wrap{flex-direction:column;align-items:flex-start;gap:14px}.site-footer{padding:26px 0}.preview-footer strong{font-size:13px}.preview-footer div+div{padding-left:13px} }
+
+@media (max-width: 900px) { .hero-premium{min-height:auto;padding:76px 0}.hero-premium .hero-grid{gap:39px}.hero-premium .hero-visual{max-width:620px;min-height:510px}.hero-premium .dashboard-preview{inset:55px 28px 32px 43px}.hero-kpi-sales{right:0}.hero-kpi-team{left:0} }
+@media (max-width: 620px) { .hero-premium{padding:56px 0 50px}.hero-premium h1{font-size:48px}.hero-premium .hero-visual{min-height:410px}.hero-premium .dashboard-preview{inset:50px 3px 20px 15px;padding:18px;border-radius:11px}.hero-premium .signal-card{top:15px}.hero-premium .success-card{bottom:0}.hero-kpi{min-width:0;padding:10px}.hero-kpi-sales{right:0;top:2px}.hero-kpi-team{display:none}.hero-premium .metric-main strong{font-size:30px}.hero-premium .ring-chart{width:68px;height:68px}.hero-premium .trusted-row{margin-top:38px} }
+
+@media (max-width:47.9375rem){html,body{max-width:100%;overflow-x:clip}body.menu-is-open{overflow:hidden}.container{width:100%;max-width:100%;padding-inline:var(--space-5)}.hero-saas__layout,.ug-services__layout,.measurable-results__layout,.process-dashboard__layout,.faq-premium__layout,.contact-box{grid-template-columns:minmax(0,1fr);min-width:0;gap:var(--space-10)}.hero-widget{display:none}.measurable-results__grid,.why-ug__grid,.pricing-plans,.form-grid{grid-template-columns:minmax(0,1fr)}.result-kpi-card{min-width:0;min-height:auto;padding:calc(var(--space-4) + var(--space-1))}.process-crm{width:100%;max-width:100%;margin:0;transform:none}.process-crm__table-wrap{display:none}.process-crm__order-card{display:grid}.process-crm__kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.form-grid input:not([type=checkbox]),.form-grid select,.form-grid textarea{font-size:16px}.mobile-footer-cta a{min-height:var(--space-12)}}
+
+/* Final mobile stability layer */
+@media (max-width: 47.9375rem) {
+  html,body { max-width:100%; overflow-x:clip; }
+  body.menu-is-open { overflow:hidden; }
+  .container { width:100%; max-width:100%; padding-inline:var(--space-5); }
+  .section { scroll-margin-top:5rem; }
+  .site-header.menu-open .main-nav { max-height:calc(100svh - 4.5rem); overflow-y:auto; }
+  .menu-toggle { display:grid; place-items:center; min-width:var(--space-11); min-height:var(--space-11); }
+  .hero-saas__layout,.ug-services__layout,.why-ug__header,.measurable-results__layout,.process-dashboard__layout,.cases-slider,.pricing-benefits__layout,.faq-premium__layout,.contact-box { min-width:0; }
+  .hero-saas__layout,.ug-services__layout,.measurable-results__layout,.process-dashboard__layout,.faq-premium__layout,.contact-box { grid-template-columns:minmax(0,1fr); gap:var(--space-10); }
+  .hero-saas { min-height:auto; }.hero-saas h1,.process-dashboard__copy h2,.measurable-results__intro h2,.client-cases__header h2,.pricing-benefits__header h2,.faq-premium__intro h2,.contact__copy h2 { overflow-wrap:break-word; }
+  .hero-saas__actions,.hero-saas__actions a { width:100%; }.hero-saas__actions { flex-direction:column; }.hero-widget { display:none; }
+  .why-ug__grid,.pricing-plans,.form-grid { grid-template-columns:minmax(0,1fr); }
+  .why-ug-card,.pricing-plan,.result-kpi-card { min-width:0; min-height:auto; }
+  .measurable-results__grid { grid-template-columns:minmax(0,1fr); }.result-kpi-card { padding:calc(var(--space-4) + var(--space-1)); }.result-kpi-card strong,.result-kpi-card:nth-child(2) strong,.result-kpi-card:nth-child(3) strong,.result-kpi-card:nth-child(4) strong { font-size:clamp(2.1rem,10vw,3.25rem); }
+  .process-crm { width:100%; max-width:100%; margin:0; transform:none; }.process-crm__nav { grid-auto-columns:max-content; overflow-x:auto; overscroll-behavior-inline:contain; }.process-crm__kpis { grid-template-columns:repeat(2,minmax(0,1fr)); }.process-crm__toast { max-width:calc(100vw - var(--space-8)); }.process-crm__table-wrap { display:none; }.process-crm__order-card { display:grid; }
+  .case-study__comparison { grid-template-columns:minmax(0,1fr); }.case-study__arrow { margin-inline:auto; transform:rotate(90deg); }.cases-slider__nav>button,.cases-slider__controls button { min-height:var(--space-11); }
+
+  .faq-premium__item button { min-height:var(--space-14); }.faq-premium__item button span { min-width:0; }
+  .form-grid input:not([type=checkbox]),.form-grid select,.form-grid textarea { font-size:16px; }.form-grid__full { grid-column:auto; }.contact__submit { min-height:var(--space-12); }.contact__direct a { overflow-wrap:anywhere; }
+  .hero-saas__ambient,.process-dashboard__glow,.measurable-results__glow,.client-cases__glow,.pricing-benefits__glow,.faq-premium__glow { filter:blur(var(--space-12)); opacity:.35; }
+}
+@media (hover:none) and (max-width:47.9375rem) { .result-kpi-card:hover,.why-ug-card:hover,.pricing-plan:hover,.case-study:hover { transform:none; box-shadow:var(--shadow-sm); }.result-kpi-card:active,.why-ug-card:active,.pricing-plan:active { transform:translateY(calc(var(--space-px) * -1)); } }
+
+/* Mobile hero composition polish */
+@media (max-width:47.9375rem) {
+  .hero-saas__layout { gap:var(--space-6); padding-top:var(--space-3); padding-bottom:var(--space-8); }
+  .hero-saas__content { padding-top:var(--space-2); }
+  .hero-saas h1 { font-size:clamp(2.75rem,12.8vw,3.85rem); }
+  .hero-saas__description { margin-top:var(--space-4); }
+  .hero-saas__actions { gap:var(--space-2); margin-top:var(--space-5); }
+  .hero-saas__button { min-height:3.25rem; }
+  .hero-saas__trust { margin-top:var(--space-5); }
+  .hero-saas__logos { gap:var(--space-3); margin-top:var(--space-4); }
+  .hero-saas__scene { height:28rem; margin-top:calc(var(--space-2) * -1); }
+  .crm-board { inset:var(--space-2) var(--space-0) var(--space-0); }
+  .mobile-footer-cta { background:rgba(14,17,24,.82); border-top:var(--border-width) solid rgba(255,255,255,.08); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); }
+}
+
+@media (max-width:47.9375rem) { .brand-logo--navbar { width:min(10.625rem,calc(100vw - 7rem)); }.brand-logo--footer { width:10rem; }.brand-watermark { right:-5rem; width:20rem; opacity:.018; } }
+@media (max-width:20rem) { .brand-watermark { display:none; } }
+@media (hover:none) { .brand:has(.brand-logo):hover .brand-logo { transform:none; } }
+
+@media (max-width:47.9375rem) { .brand-logo--navbar { width:clamp(9.0625rem,43vw,10.3125rem); height:auto; max-width:calc(100% - 4rem); flex-shrink:0; } }
+
+@media (min-width:48rem) { .nav-wrap { display:grid; grid-template-columns:auto minmax(0,1fr) auto; align-items:center; gap:var(--space-8); }.brand-logo-link { display:inline-flex; }.main-nav { display:flex; justify-self:end; margin-left:0; }.nav-cta { display:inline-flex; }.menu-toggle { display:none; }.brand-logo--navbar { width:clamp(10rem,12vw,11.875rem); } }
+
+/* Final responsive system */
+html{scroll-behavior:smooth}body{overflow-x:clip;font-family:"Manrope","Inter",system-ui,sans-serif;font-weight:400}img{max-width:100%;height:auto}.container{width:min(calc(100% - clamp(2rem,5vw,6rem)),93.75rem);margin-inline:auto}.section{padding-block:clamp(3.5rem,7vw,7.5rem)}
+h1,h2,h3{font-family:"Manrope","Inter",system-ui,sans-serif}h1,h2{letter-spacing:-.03em}button,a,input,select,textarea{font:inherit}
+
+@media(max-width:90rem){
+  .container{width:min(calc(100% - 3rem),87.5rem)}
+  .main-nav{gap:var(--space-4)}.main-nav a{font-size:.82rem}.nav-wrap{gap:var(--space-5)}
+  .hero-saas__layout{width:min(calc(100% - 3rem),82rem);grid-template-columns:minmax(0,.78fr) minmax(0,1.22fr);gap:1rem;padding-block:1.75rem 2.5rem}
+  .hero-saas__content{padding-top:.5rem}.hero-saas h1{font-size:clamp(3rem,4.45vw,4rem);line-height:.96}.hero-saas__description{font-size:1rem;line-height:1.55}.hero-offer{margin-top:1rem;padding:.85rem}.hero-saas__actions{margin-top:1.1rem}.hero-saas__button{min-height:3.25rem}.hero-saas__stats{margin-top:1.5rem}
+  .hero-sales{width:100%;height:34rem;margin-left:0}.hero-sales .sales-board{top:3%;min-height:29.5rem;padding:1rem}.hero-sales .sales-kanban{gap:.55rem}.hero-sales .sales-lane{min-height:7.9rem;padding:.7rem}.hero-sales .sales-board .hero-saas__operator{right:-7%;height:65%}
+  .ug-services__layout{gap:clamp(2.5rem,5vw,5rem)}.ug-services__content h2{font-size:clamp(2.6rem,4.2vw,3.75rem)}
+}
+
+@media(max-width:80rem){
+  .container{width:min(calc(100% - 2.5rem),75rem)}
+  .hero-saas__layout{width:min(calc(100% - 2.5rem),75rem);grid-template-columns:minmax(0,.84fr) minmax(0,1.16fr)}
+  .hero-saas h1{font-size:clamp(2.85rem,4.3vw,3.5rem)}.hero-saas__stats dd strong{font-size:1.35rem}.sales-board__kpis{display:none}
+  .hero-sales .sales-board .hero-saas__operator{opacity:.72}.sales-float{display:none}
+}
+
+@media(max-width:64rem){
+  .container{width:min(calc(100% - 2.5rem),60rem)}
+  .hero-saas__layout{grid-template-columns:minmax(0,1fr);width:min(calc(100% - 2.5rem),60rem);gap:2rem;padding-block:3rem 4rem}.hero-saas__content{width:min(100%,44rem);max-width:44rem}.hero-saas h1{font-size:clamp(3.25rem,7vw,4.5rem)}
+  .hero-sales{width:100%;height:35rem;margin:0;overflow:hidden}.hero-sales .sales-board{inset:0 0 auto;width:100%;max-width:100%;min-height:31rem}.hero-sales .sales-kanban{width:72%}.hero-sales .sales-board .hero-saas__operator{display:block}
+  .ug-services__layout,.measurable-results__layout,.process-dashboard__layout,.faq-premium__layout,.contact-box{grid-template-columns:minmax(0,1fr)}.ug-services__content{max-width:46rem}.ug-services__cards{grid-template-columns:repeat(2,minmax(0,1fr));max-width:100%;padding-inline:0}
+  .sales-department__grid,.why-ug__grid,.pricing-plans{grid-template-columns:repeat(2,minmax(0,1fr))}.pricing-plan:last-child{grid-column:1/-1}.process-crm{width:100%;max-width:100%}.footer-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+
+@media(max-width:47.9375rem){
+  html{scroll-behavior:auto}.container{width:100%;padding-inline:1.25rem}.section{padding-block:clamp(3.25rem,14vw,4.5rem)}
+  .nav-wrap{min-height:4.25rem}.menu-toggle,.back-to-top,.cases-slider__nav>button,.cases-slider__controls button,.faq-premium__item button{min-width:2.75rem;min-height:2.75rem}.site-header.menu-open .main-nav{top:4.25rem;padding:1rem 1.25rem 1.25rem;background:rgba(13,17,32,.97)}.site-header.menu-open .main-nav a{display:flex;align-items:center;min-height:2.75rem;padding:.6rem 0}
+  .hero-saas__layout{width:100%;padding:2rem 1.25rem 3rem;gap:1.5rem}.hero-saas__content{width:100%;max-width:100%;overflow:visible}.hero-saas h1{max-width:100%;font-size:clamp(2.375rem,11.5vw,3rem);line-height:.98;letter-spacing:-.045em;overflow-wrap:normal}.hero-saas__description{font-size:1rem;line-height:1.6}.hero-saas__actions{display:grid;grid-template-columns:1fr;width:100%}.hero-saas__button{width:100%;min-height:3rem}.hero-saas__stats{grid-template-columns:repeat(2,minmax(0,1fr));width:100%}.hero-saas__stats>div{min-width:0}.hero-saas__stats dd span{overflow-wrap:anywhere}
+  .hero-sales{height:31rem;margin:0}.hero-sales .sales-board{min-height:0}.hero-sales .sales-kanban{grid-template-columns:repeat(2,minmax(0,1fr));width:100%}.hero-sales .sales-board .hero-saas__operator,.hero-sales .sales-float,.hero-sales .hero-media{display:none}
+  .ug-services__content h2{font-size:clamp(2.25rem,10vw,3rem);line-height:1}.ug-services__lead{font-size:1rem}.ug-services__cards,.sales-department__grid,.why-ug__grid,.measurable-results__grid,.pricing-plans,.footer-grid{grid-template-columns:minmax(0,1fr)}.ug-service-card{height:auto;min-height:12rem}.pricing-plan:last-child{grid-column:auto}.pricing-plan,.pricing-plan--featured{transform:none}.pricing-plan a{width:100%;min-height:3rem}
+  .process-crm__timeline{grid-template-columns:minmax(0,1fr)}.process-crm__timeline li{min-height:4rem}.case-study__comparison{grid-template-columns:minmax(0,1fr)}.case-study__arrow{transform:rotate(90deg)}
+  .form-grid{grid-template-columns:minmax(0,1fr)}.form-grid__full{grid-column:auto}.form-grid input:not([type=checkbox]),.form-grid select,.form-grid textarea{width:100%;min-height:3rem;font-size:16px}.contact__submit{min-height:3rem}.footer-bottom{align-items:flex-start;flex-direction:column;gap:1rem}.footer-bottom div{flex-wrap:wrap}.site-footer{padding-bottom:5.5rem}
+}
+
+@media(max-width:30rem){
+  .container{padding-inline:1rem}.hero-saas__layout{padding-inline:1rem}.hero-saas h1{font-size:clamp(2.25rem,11.2vw,2.75rem)}.hero-offer{padding:.85rem}.hero-offer strong{font-size:.92rem}.hero-saas__stats dd strong{font-size:1.25rem}.hero-sales{height:30rem}.sales-board__flow{overflow:hidden}.ug-services__benefits li{grid-template-columns:2.5rem minmax(0,1fr)}
+}
+
+@media(hover:hover) and (pointer:fine){.ug-service-card:hover,.pricing-plan:hover,.why-ug-card:hover,.result-kpi-card:hover{will-change:transform}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero-saas__ambient,.hero-saas__particles,.ug-services__shape{animation:none!important}.hero-saas [data-hero-reveal],.ug-services [data-services-card],.pricing-plan,.why-ug-card{transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}}
